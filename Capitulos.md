@@ -11,3 +11,83 @@ De igual forma vemos una parte fundamental de la transmisión de datos ya que pa
 Se habla del término cliente servidor que hace parte fundamental de una red, ya que el cliente puede ser un equipo que está necesitando un servicio como correo electrónico, acceso a un archivo entre otros, el servidor es quien ofrece este servicio usando software dependiendo de la solicitud, se tiene varias alternativas para estos casos ya que un cliente puede servidor al mismo tiempo, pero se debe analizar cada cas para tener la claridad del uso que se le dará ala red para que el rendimiento del servicio sea el esperado, existen varias formas de interactuar entre cliente y servidor la mas sencilla es llamada entre pares o la mas recomendada un cliente que solicite servicios a varios servidores, para esto es necesario tener claro que la red esta divida en niveles de dispositivos en tres secciones como los son dispositivos finales(computadores, celulares, impresoras), dispositivos intermedios (switch,router, firewall) , medios de red (lan, wan, inalámbrico), el  siguiente paso es saber cómo realizar la conexión a internet de la red que se tenga para estos casos existen diferentes formas de realizarlo, por medio de un ISP quien será nuestro proveedor principal quien ya tiene las interconexiones necesarias entre otro ISP formando una gran red, con esto afinado se pasa a la parte de conexiones que se usaran para los usuarios finales, ya sea usando cable, red inalámbrica, red móvil o red satelital. 
 
 <img width="588" height="277" alt="Componentes de red" src="https://github.com/user-attachments/assets/588a8927-0748-4614-9f12-70d5d1c2f5d4" />
+
+# - Capitulo 3
+Capa de aplicación
+Es la capa superior (capa 7 del modelo OSI) y permite que las aplicaciones de usuario se comuniquen a través de la red.
+Define:
+•	Formato de los datos
+•	Tipos de mensajes
+•	Reglas de comunicación entre dispositivos
+________________________________________
+🔹 Relación OSI vs TCP/IP
+•	Los protocolos TCP/IP no separan claramente las capas de sesión y presentación.
+•	Estas funciones suelen estar integradas en la capa de aplicación.
+________________________________________
+🔹 Capa de presentación
+Se encarga de:
+•	Convertir y codificar datos
+•	Comprimir información
+•	Cifrar y descifrar datos
+________________________________________
+🔹 Capa de sesión
+Su función es:
+•	Establecer, mantener y finalizar conexiones
+•	Controlar el diálogo entre aplicaciones
+•	Recuperar sesiones interrumpidas
+________________________________________
+🔹 Protocolos principales
+•	DNS: Traduce nombres a IP
+•	HTTP / HTTPS: Transferencia web (HTTPS es seguro)
+•	SMTP: Envío de correos
+•	POP3 / IMAP: Recepción de correos
+•	FTP: Transferencia de archivos
+•	Telnet / SSH: Acceso remoto (SSH es seguro)
+________________________________________
+🔹 Servidores de red
+•	Responden a solicitudes de clientes
+•	Ejecutan procesos llamados daemons
+•	Ejemplos: DNS, web, correo, FTP, DHCP
+________________________________________
+🔹 Aplicaciones vs servicios
+•	Aplicaciones: usadas por el usuario (navegador, email)
+•	Servicios: procesos que permiten la comunicación
+➡️ Las aplicaciones crean los mensajes; los protocolos definen cómo se envían
+________________________________________
+🔹 Modelo cliente-servidor
+•	Cliente solicita
+•	Servidor responde
+•	Puede haber autenticación
+•	Tipos de comunicación:
+o	Descarga
+o	Subida
+________________________________________
+🔹 Redes P2P
+•	No hay servidor central
+•	Cada equipo puede ser cliente y servidor
+•	Ejemplo: Gnutella
+________________________________________
+🔹 Puertos
+Permiten dirigir datos a la aplicación correcta:
+•	DNS → 53
+•	HTTP → 80
+•	HTTPS → 443
+•	SMTP → 25
+•	FTP → 20/21
+•	Telnet → 23
+•	DHCP → 67
+________________________________________
+🔹 DNS
+•	Convierte nombres de dominio a IP
+•	Estructura jerárquica
+•	Usa registros (A, NS, CNAME, MX)
+•	Utiliza caché para mayor eficiencia
+________________________________________
+🔹 Servicios web y correo
+•	HTTP usa métodos como GET, POST, PUT
+•	HTTPS añade seguridad (cifrado)
+•	Correo electrónico:
+o	MUA: cliente
+o	MTA: transporte
+o	MDA: entrega
+
