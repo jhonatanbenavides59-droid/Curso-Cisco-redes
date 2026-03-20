@@ -19,55 +19,55 @@ Define:
 •	Formato de los datos
 •	Tipos de mensajes
 •	Reglas de comunicación entre dispositivos
-________________________________________
-🔹 Relación OSI vs TCP/IP
+
+- Relación OSI vs TCP/IP
 •	Los protocolos TCP/IP no separan claramente las capas de sesión y presentación.
 •	Estas funciones suelen estar integradas en la capa de aplicación.
-________________________________________
-🔹 Capa de presentación
+
+- Capa de presentación
 Se encarga de:
 •	Convertir y codificar datos
 •	Comprimir información
 •	Cifrar y descifrar datos
-________________________________________
-🔹 Capa de sesión
+
+- Capa de sesión
 Su función es:
 •	Establecer, mantener y finalizar conexiones
 •	Controlar el diálogo entre aplicaciones
 •	Recuperar sesiones interrumpidas
-________________________________________
-🔹 Protocolos principales
+
+- Protocolos principales
 •	DNS: Traduce nombres a IP
 •	HTTP / HTTPS: Transferencia web (HTTPS es seguro)
 •	SMTP: Envío de correos
 •	POP3 / IMAP: Recepción de correos
 •	FTP: Transferencia de archivos
 •	Telnet / SSH: Acceso remoto (SSH es seguro)
-________________________________________
-🔹 Servidores de red
+
+- Servidores de red
 •	Responden a solicitudes de clientes
 •	Ejecutan procesos llamados daemons
 •	Ejemplos: DNS, web, correo, FTP, DHCP
-________________________________________
-🔹 Aplicaciones vs servicios
+
+- Aplicaciones vs servicios
 •	Aplicaciones: usadas por el usuario (navegador, email)
 •	Servicios: procesos que permiten la comunicación
 ➡️ Las aplicaciones crean los mensajes; los protocolos definen cómo se envían
-________________________________________
-🔹 Modelo cliente-servidor
+
+- Modelo cliente-servidor
 •	Cliente solicita
 •	Servidor responde
 •	Puede haber autenticación
 •	Tipos de comunicación:
 o	Descarga
 o	Subida
-________________________________________
-🔹 Redes P2P
+
+- Redes P2P
 •	No hay servidor central
 •	Cada equipo puede ser cliente y servidor
 •	Ejemplo: Gnutella
-________________________________________
-🔹 Puertos
+
+- Puertos
 Permiten dirigir datos a la aplicación correcta:
 •	DNS → 53
 •	HTTP → 80
@@ -76,14 +76,14 @@ Permiten dirigir datos a la aplicación correcta:
 •	FTP → 20/21
 •	Telnet → 23
 •	DHCP → 67
-________________________________________
-🔹 DNS
+
+- DNS
 •	Convierte nombres de dominio a IP
 •	Estructura jerárquica
 •	Usa registros (A, NS, CNAME, MX)
 •	Utiliza caché para mayor eficiencia
-________________________________________
-🔹 Servicios web y correo
+
+- Servicios web y correo
 •	HTTP usa métodos como GET, POST, PUT
 •	HTTPS añade seguridad (cifrado)
 •	Correo electrónico:
