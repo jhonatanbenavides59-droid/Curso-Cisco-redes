@@ -12,7 +12,7 @@ Se habla del término cliente servidor que hace parte fundamental de una red, ya
 
 <img width="588" height="277" alt="Componentes de red" src="https://github.com/user-attachments/assets/588a8927-0748-4614-9f12-70d5d1c2f5d4" />
 
-# - Capitulo 3
+# - Capitulo tres
 Capa de aplicación
 Es la capa superior (capa 7 del modelo OSI) y permite que las aplicaciones de usuario se comuniquen a través de la red.
 Define:
@@ -52,7 +52,7 @@ Su función es:
 - Aplicaciones vs servicios
 •	Aplicaciones: usadas por el usuario (navegador, email)
 •	Servicios: procesos que permiten la comunicación
-➡️ Las aplicaciones crean los mensajes; los protocolos definen cómo se envían
+ Las aplicaciones crean los mensajes; los protocolos definen cómo se envían
 
 - Modelo cliente-servidor
 •	Cliente solicita
@@ -90,4 +90,114 @@ Permiten dirigir datos a la aplicación correcta:
 o	MUA: cliente
 o	MTA: transporte
 o	MDA: entrega
+
+# Capitulo cuatro
+
+1. Función de la capa de transporte
+La capa de transporte (capa 4 del modelo OSI) se encarga de la comunicación extremo a extremo entre aplicaciones que se ejecutan en dispositivos de origen y destino.
+Funciones principales:
+
+Segmentar datos para su transmisión
+Controlar la comunicación entre dispositivos finales
+Garantizar la entrega de datos cuando el protocolo lo requiere
+Multiplexar aplicaciones mediante el uso de números de puerto
+
+ 2. Segmentación y reensamblaje
+
+Los datos grandes se dividen en segmentos antes de enviarse
+Cada segmento viaja de forma independiente por la red
+En el dispositivo de destino, los segmentos se reensamblan en el orden correcto
+
+✅ Esto mejora la eficiencia y confiabilidad de la transmisión.
+
+ 3. Control de la comunicación
+La capa de transporte puede:
+
+Establecer o no una conexión
+Asegurar la entrega confiable de los datos
+Controlar la velocidad de envío para evitar saturar al receptor
+
+
+4. Protocolos principales de la capa de transporte
+- TCP (Transmission Control Protocol)
+
+Orientado a conexión
+Confiable
+Usa confirmaciones (ACK)
+Reenvía datos perdidos
+Controla flujo y congestión
+- Usado en:
+
+HTTP / HTTPS
+FTP
+Correo electrónico (SMTP, POP3, IMAP)
+
+- UDP (User Datagram Protocol)
+
+No orientado a conexión
+No garantiza entrega
+Más rápido y ligero
+No utiliza confirmaciones ni control de errores
+
+- Usado en:
+
+Streaming de audio y video
+Juegos en línea
+DNS
+
+5. Diferencias clave entre TCP y UDP
+
+<img width="633" height="166" alt="image" src="https://github.com/user-attachments/assets/88351e84-ab75-43dc-9ec4-85824d01ff86" />
+
+
+6. Puertos
+Los puertos permiten identificar qué aplicación debe recibir los datos dentro de un dispositivo.
+Funciones:
+
+Permiten múltiples comunicaciones simultáneas
+Identifican procesos de origen y destino
+
+Tipos de puertos:
+
+Bien conocidos (0–1023) → HTTP (80), HTTPS (443)
+Registrados (1024–49151)
+Dinámicos o efímeros (49152–65535)
+
+
+7. Multiplexación y demultiplexación
+
+Multiplexación: el envío simultáneo de datos de varias aplicaciones
+Demultiplexación: la recepción y entrega correcta de los datos a la aplicación correspondiente
+
+
+8. Comunicación confiable con TCP
+TCP garantiza la entrega confiable mediante:
+
+Números de secuencia
+Confirmaciones (ACK)
+Reenvío de segmentos perdidos
+Control de flujo mediante ventana deslizante
+
+
+9. Establecimiento de conexión (Three-Way Handshake)
+TCP establece una conexión usando tres pasos:
+
+Cliente → SYN
+Servidor → SYN-ACK
+Cliente → ACK
+
+Con esto, la conexión queda establecida.
+
+10. Finalización de la conexión
+
+Se utilizan mensajes FIN y ACK
+Permite cerrar la sesión de forma ordenada
+Libera recursos del sistema y de la red
+
+11. Control de flujo y congestión
+
+Evita que el emisor envíe datos más rápido de lo que el receptor puede procesar
+Ajusta dinámicamente la velocidad según las condiciones de la red
+Reduce pérdidas y congestión
+
 
