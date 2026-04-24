@@ -200,4 +200,125 @@ Evita que el emisor envíe datos más rápido de lo que el receptor puede proces
 Ajusta dinámicamente la velocidad según las condiciones de la red
 Reduce pérdidas y congestión
 
+# Capítulo 5
+
+En este capítulo se explican las reglas que permiten la comunicación entre dispositivos, conocidas como protocolos. Se introduce el concepto de comunicación estructurada.
+Se analiza cómo los datos se encapsulan en unidades llamadas segmentos, paquetes y tramas, dependiendo de la capa del modelo OSI.
+El capítulo también explica la sincronización, codificación y control de flujo en la transmisión de datos.
+Se introduce el concepto de direccionamiento lógico y físico, necesario para identificar dispositivos en la red.
+Además, se estudian los modelos de referencia como OSI y TCP/IP, que organizan las funciones de red en capas.
+Finalmente, se destaca la importancia de los protocolos para garantizar comunicación confiable y eficiente
+
+# Capítulo 6
+
+Este capítulo describe los diferentes medios por los que se transmiten los datos. Se incluyen cables de cobre, fibra óptica y medios inalámbricos.
+Se analizan las características físicas de cada medio, como velocidad, distancia máxima y susceptibilidad a interferencias.
+El capítulo también explica cómo se codifican las señales para transmitir información.
+Se comparan ventajas y desventajas de cada medio, destacando la fibra óptica por su alta capacidad y baja pérdida.
+Además, se introducen conceptos como latencia y ruido, que afectan la calidad de la transmisión.
+Finalmente, se enfatiza la correcta selección del medio según la aplicación.
+
+# Capítulo 7
+
+Este capítulo se enfoca en la capa de acceso a la red, donde los dispositivos se conectan directamente.
+Se explica el funcionamiento de switches, que utilizan direcciones MAC para enviar datos dentro de una red local.
+El capítulo introduce el concepto de conmutación y aprendizaje de direcciones MAC.
+También se abordan problemas como colisiones y dominios de broadcast.
+Se explica el uso de VLANs para segmentar redes y mejorar seguridad y rendimiento.
+Finalmente, se destaca la importancia de esta capa en la eficiencia de la red
+
+# Capítulo 8
+
+Este capítulo introduce el Protocolo de Internet (IP) como el mecanismo principal para el direccionamiento y envío de paquetes en redes. IP permite identificar de forma única a cada dispositivo conectado, facilitando la comunicación entre redes diferentes.
+Se explica que IP es un protocolo no orientado a conexión, lo que significa que no garantiza la entrega de los paquetes. En lugar de ello, se basa en el principio de “mejor esfuerzo”, donde los datos pueden perderse, duplicarse o llegar fuera de orden.
+El capítulo también aborda la estructura básica de un paquete IP, incluyendo encabezados que contienen información como dirección de origen, destino y tiempo de vida (TTL). Estos campos son fundamentales para el enrutamiento.
+Se introduce el concepto de fragmentación, que ocurre cuando un paquete es demasiado grande para un medio de transmisión y debe dividirse en partes más pequeñas.
+Además, se explica la diferencia entre IPv4 e IPv6 a nivel conceptual, preparando al estudiante para los capítulos siguientes.
+Finalmente, se destaca la importancia de IP como base de internet, ya que permite la interconexión de redes heterogéneas a nivel global.
+
+# Capítulo 9
+
+Este capítulo profundiza en el esquema de direccionamiento IPv4, basado en direcciones de 32 bits representadas en formato decimal punteado.
+Se explica la estructura de una dirección IPv4, dividida en parte de red y parte de host, lo que permite identificar tanto la red como el dispositivo.
+El capítulo introduce las clases de direcciones (A, B, C), aunque también se menciona el uso moderno de CIDR para una asignación más eficiente.
+Se analizan conceptos como máscaras de subred, que permiten segmentar redes en subredes más pequeñas, mejorando la organización y seguridad.
+Además, se estudian direcciones especiales como la dirección de broadcast y la dirección de red, fundamentales para la comunicación en redes locales.
+Finalmente, se destaca la limitación del espacio de direcciones IPv4 y la necesidad de técnicas como NAT para extender su uso.
+
+# Capítulo 10
+
+Este capítulo presenta IPv6 como la solución al agotamiento de direcciones IPv4, utilizando direcciones de 128 bits.
+Se explica el formato hexadecimal de las direcciones IPv6 y su representación abreviada, lo que facilita su uso.
+El capítulo también introduce los tipos de direcciones IPv6, como unicast, multicast y anycast, cada uno con funciones específicas.
+Se analiza la autoconfiguración sin estado (SLAAC), que permite a los dispositivos generar automáticamente su dirección IP.
+Además, se destacan mejoras en IPv6 como mayor seguridad, eficiencia en el enrutamiento y eliminación de NAT.
+Finalmente, se enfatiza la transición gradual de IPv4 a IPv6 en redes modernas.
+
+# Capítulo 11
+
+En este capítulo se estudia el Protocolo de Configuración Dinámica de Host (DHCP), que permite asignar direcciones IP automáticamente.
+Se describe el proceso de comunicación DHCP en cuatro pasos: Discover, Offer, Request y Acknowledge (DORA).
+El capítulo explica cómo DHCP simplifica la administración de redes, evitando configuraciones manuales.
+También se introducen conceptos como tiempo de concesión (lease) y reservas de direcciones.
+Se analiza el papel del servidor DHCP en redes empresariales y domésticas.
+Finalmente, se destaca su importancia para la escalabilidad y eficiencia en la gestión de direcciones IP.
+
+# Capítulo 12
+
+Este capítulo explica el concepto de puerta de enlace o gateway, que permite la comunicación entre redes diferentes.
+Se describe cómo los dispositivos envían tráfico fuera de su red local a través de un router.
+El capítulo analiza el proceso de decisión que realiza un host para determinar si el destino está en su red o en otra.
+También se introduce la tabla de enrutamiento básica en los dispositivos.
+Se explica la importancia de la puerta de enlace predeterminada en redes domésticas y empresariales.
+Finalmente, se destaca su papel en el acceso a internet.
+
+# Capitulo 13 
+
+Este capítulo aborda el protocolo ARP (Address Resolution Protocol), utilizado para mapear direcciones IP a direcciones MAC.
+Se explica cómo un dispositivo consulta en la red para obtener la dirección física correspondiente a una IP.
+El capítulo describe el funcionamiento de la tabla ARP y su almacenamiento temporal.
+También se analizan problemas de seguridad como el ARP spoofing.
+Se introduce el equivalente en IPv6, conocido como Neighbor Discovery Protocol (NDP).
+Finalmente, se destaca la importancia de la resolución de direcciones para la comunicación en redes locales.
+
+# Capitulo 14 
+
+En este capítulo se estudia el proceso de enrutamiento, mediante el cual los routers determinan la mejor ruta para enviar paquetes.
+Se explica la diferencia entre enrutamiento estático y dinámico.
+El capítulo introduce conceptos como métricas, rutas y tablas de enrutamiento.
+También se analizan protocolos de enrutamiento básicos.
+Se describe el proceso de reenvío de paquetes en un router.
+Finalmente, se destaca la importancia del enrutamiento en la conectividad global.
+
+# Caputilo 15 
+
+Este capítulo se centra en la capa de transporte del modelo OSI, responsable de la entrega de datos entre aplicaciones.
+Se estudian los protocolos TCP y UDP, destacando sus diferencias en confiabilidad y velocidad.
+TCP proporciona comunicación confiable mediante control de errores y confirmaciones.
+UDP, en cambio, es más rápido pero no garantiza la entrega de datos.
+El capítulo también introduce el concepto de puertos, que permiten identificar aplicaciones.
+Finalmente, se destaca la importancia de elegir el protocolo adecuado según la aplicación.
+
+# Caputlo 16 
+
+Este capítulo describe los servicios que utilizan los usuarios finales, como web, correo electrónico y resolución de nombres.
+Se explican protocolos como HTTP, HTTPS, DNS y SMTP.
+El capítulo analiza cómo estos servicios funcionan sobre la red.
+También se estudia la interacción entre cliente y servidor.
+Se destaca la importancia de la seguridad en servicios como HTTPS.
+Finalmente, se enfatiza el papel de esta capa en la experiencia del usuario.
+
+# Capitulo 17
+
+Este capítulo presenta herramientas utilizadas para diagnosticar y solucionar problemas de red.
+Se explican comandos como ping, traceroute e ipconfig.
+El capítulo analiza cómo estas herramientas ayudan a identificar fallos de conectividad.
+También se introduce el uso de estadísticas de red.
+Se destaca la importancia del monitoreo continuo.
+Finalmente, se enfatiza el papel de estas herramientas en la administración de redes
+
+
+
+
+
 
