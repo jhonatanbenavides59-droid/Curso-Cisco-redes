@@ -1,19 +1,19 @@
 # Resumen Capitulos Conceptos básicos de redes 2026-1
 ## Jhonatan Steevens Benavides Alfonso, jsbenavidez@ucompensar.edu.co 
 
-# - Capitulo uno 
+# Capitulo 1
 ## Conmutación en un mundo conectado
 Se repasará de manera sencilla los conceptos básicos de cómo funciona el internet donde para la mayoría del mundo se trata solo de tener navegación en algún dispositivo final, pero no cae en cuenta de toda la infraestructura y configuraciones que se hacen para poder tener acceso a algo muy usado hoy en día como una página web, mostrando los diferente tipos de red que se pueden crear, un ejemplo es entornos domésticos donde se pueden usar distintos elementos como cámaras de seguridad, televisores, consolas entre otros usando conexiones a internet para su interconexión.
 De igual forma vemos una parte fundamental de la transmisión de datos ya que para los computadores la lengua nativa son 0 (falso) y 1(verdadero) llamado Bit el principal sistema que se usa para que se entiendan entre los diferentes dispositivos que hay en una red. Se hace un enfoque en los principales métodos de transmisión de datos, señales eléctricas que usa pulsos de electricidad, señales ópticas que usa pulsos de luz, señales inalámbricas que usan ondas de radio, donde se validan las diferencias de cada método, tocando un tema muy importante como lo es el ancho de banda (capacidad de un medio para transmitir datos de un punto a otro) y sus diferentes formas de medición como lo son Bps, Kbps, Mbps, Gbps, Tbps, dato con gran relevancia que se usa para el envío y recepción de toda la información que es necesaria para que funcione el internet
 <img width="598" height="246" alt="Rendimiento ancho de banda" src="https://github.com/user-attachments/assets/44743ff4-4aee-4a54-91c9-241eb08e2ffb" />
-# - Capitulo dos
+# Capitulo 2
 ## Componentes, tipos y conexiones de red
 Se habla del término cliente servidor que hace parte fundamental de una red, ya que el cliente puede ser un equipo que está necesitando un servicio como correo electrónico, acceso a un archivo entre otros, el servidor es quien ofrece este servicio usando software dependiendo de la solicitud, se tiene varias alternativas para estos casos ya que un cliente puede servidor al mismo tiempo, pero se debe analizar cada cas para tener la claridad del uso que se le dará ala red para que el rendimiento del servicio sea el esperado, existen varias formas de interactuar entre cliente y servidor la mas sencilla es llamada entre pares o la mas recomendada un cliente que solicite servicios a varios servidores, para esto es necesario tener claro que la red esta divida en niveles de dispositivos en tres secciones como los son dispositivos finales(computadores, celulares, impresoras), dispositivos intermedios (switch,router, firewall) , medios de red (lan, wan, inalámbrico), el  siguiente paso es saber cómo realizar la conexión a internet de la red que se tenga para estos casos existen diferentes formas de realizarlo, por medio de un ISP quien será nuestro proveedor principal quien ya tiene las interconexiones necesarias entre otro ISP formando una gran red, con esto afinado se pasa a la parte de conexiones que se usaran para los usuarios finales, ya sea usando cable, red inalámbrica, red móvil o red satelital. 
 
 <img width="588" height="277" alt="Componentes de red" src="https://github.com/user-attachments/assets/588a8927-0748-4614-9f12-70d5d1c2f5d4" />
 
-# - Capitulo tres
-Capa de aplicación
+# Capitulo tres
+## Capa de aplicación
 Es la capa superior (capa 7 del modelo OSI) y permite que las aplicaciones de usuario se comuniquen a través de la red.
 Define:
 •	Formato de los datos
@@ -201,6 +201,7 @@ Ajusta dinámicamente la velocidad según las condiciones de la red
 Reduce pérdidas y congestión
 
 # Capítulo 5
+## Principios de comunicación
 
 En este capítulo se explican las reglas que permiten la comunicación entre dispositivos, conocidas como protocolos. Se introduce el concepto de comunicación estructurada.
 Se analiza cómo los datos se encapsulan en unidades llamadas segmentos, paquetes y tramas, dependiendo de la capa del modelo OSI.
@@ -210,6 +211,7 @@ Además, se estudian los modelos de referencia como OSI y TCP/IP, que organizan 
 Finalmente, se destaca la importancia de los protocolos para garantizar comunicación confiable y eficiente
 
 # Capítulo 6
+## Medios de red
 
 Este capítulo describe los diferentes medios por los que se transmiten los datos. Se incluyen cables de cobre, fibra óptica y medios inalámbricos.
 Se analizan las características físicas de cada medio, como velocidad, distancia máxima y susceptibilidad a interferencias.
@@ -219,6 +221,7 @@ Además, se introducen conceptos como latencia y ruido, que afectan la calidad d
 Finalmente, se enfatiza la correcta selección del medio según la aplicación.
 
 # Capítulo 7
+## La capa de acceso
 
 Este capítulo se enfoca en la capa de acceso a la red, donde los dispositivos se conectan directamente.
 Se explica el funcionamiento de switches, que utilizan direcciones MAC para enviar datos dentro de una red local.
@@ -228,6 +231,7 @@ Se explica el uso de VLANs para segmentar redes y mejorar seguridad y rendimient
 Finalmente, se destaca la importancia de esta capa en la eficiencia de la red
 
 # Capítulo 8
+## El protocolo de Internet (IP)
 
 Este capítulo introduce el Protocolo de Internet (IP) como el mecanismo principal para el direccionamiento y envío de paquetes en redes. IP permite identificar de forma única a cada dispositivo conectado, facilitando la comunicación entre redes diferentes.
 Se explica que IP es un protocolo no orientado a conexión, lo que significa que no garantiza la entrega de los paquetes. En lugar de ello, se basa en el principio de “mejor esfuerzo”, donde los datos pueden perderse, duplicarse o llegar fuera de orden.
@@ -237,6 +241,7 @@ Además, se explica la diferencia entre IPv4 e IPv6 a nivel conceptual, preparan
 Finalmente, se destaca la importancia de IP como base de internet, ya que permite la interconexión de redes heterogéneas a nivel global.
 
 # Capítulo 9
+## Direccionamiento IPv4
 
 Este capítulo profundiza en el esquema de direccionamiento IPv4, basado en direcciones de 32 bits representadas en formato decimal punteado.
 Se explica la estructura de una dirección IPv4, dividida en parte de red y parte de host, lo que permite identificar tanto la red como el dispositivo.
@@ -246,6 +251,7 @@ Además, se estudian direcciones especiales como la dirección de broadcast y la
 Finalmente, se destaca la limitación del espacio de direcciones IPv4 y la necesidad de técnicas como NAT para extender su uso.
 
 # Capítulo 10
+## Direccionamiento IPv6
 
 Este capítulo presenta IPv6 como la solución al agotamiento de direcciones IPv4, utilizando direcciones de 128 bits.
 Se explica el formato hexadecimal de las direcciones IPv6 y su representación abreviada, lo que facilita su uso.
@@ -255,6 +261,7 @@ Además, se destacan mejoras en IPv6 como mayor seguridad, eficiencia en el enru
 Finalmente, se enfatiza la transición gradual de IPv4 a IPv6 en redes modernas.
 
 # Capítulo 11
+## Direccionamiento dinámico con DHCP
 
 En este capítulo se estudia el Protocolo de Configuración Dinámica de Host (DHCP), que permite asignar direcciones IP automáticamente.
 Se describe el proceso de comunicación DHCP en cuatro pasos: Discover, Offer, Request y Acknowledge (DORA).
@@ -264,6 +271,7 @@ Se analiza el papel del servidor DHCP en redes empresariales y domésticas.
 Finalmente, se destaca su importancia para la escalabilidad y eficiencia en la gestión de direcciones IP.
 
 # Capítulo 12
+## Puertas de enlace a otras redes
 
 Este capítulo explica el concepto de puerta de enlace o gateway, que permite la comunicación entre redes diferentes.
 Se describe cómo los dispositivos envían tráfico fuera de su red local a través de un router.
@@ -273,6 +281,7 @@ Se explica la importancia de la puerta de enlace predeterminada en redes domést
 Finalmente, se destaca su papel en el acceso a internet.
 
 # Capitulo 13 
+## Resolución de dirección
 
 Este capítulo aborda el protocolo ARP (Address Resolution Protocol), utilizado para mapear direcciones IP a direcciones MAC.
 Se explica cómo un dispositivo consulta en la red para obtener la dirección física correspondiente a una IP.
@@ -282,6 +291,7 @@ Se introduce el equivalente en IPv6, conocido como Neighbor Discovery Protocol (
 Finalmente, se destaca la importancia de la resolución de direcciones para la comunicación en redes locales.
 
 # Capitulo 14 
+## Enrutamiento entre redes
 
 En este capítulo se estudia el proceso de enrutamiento, mediante el cual los routers determinan la mejor ruta para enviar paquetes.
 Se explica la diferencia entre enrutamiento estático y dinámico.
@@ -291,6 +301,7 @@ Se describe el proceso de reenvío de paquetes en un router.
 Finalmente, se destaca la importancia del enrutamiento en la conectividad global.
 
 # Caputilo 15 
+## Capa de transporte
 
 Este capítulo se centra en la capa de transporte del modelo OSI, responsable de la entrega de datos entre aplicaciones.
 Se estudian los protocolos TCP y UDP, destacando sus diferencias en confiabilidad y velocidad.
@@ -300,6 +311,7 @@ El capítulo también introduce el concepto de puertos, que permiten identificar
 Finalmente, se destaca la importancia de elegir el protocolo adecuado según la aplicación.
 
 # Caputlo 16 
+## Servicios de la capa de aplicación
 
 Este capítulo describe los servicios que utilizan los usuarios finales, como web, correo electrónico y resolución de nombres.
 Se explican protocolos como HTTP, HTTPS, DNS y SMTP.
@@ -309,6 +321,7 @@ Se destaca la importancia de la seguridad en servicios como HTTPS.
 Finalmente, se enfatiza el papel de esta capa en la experiencia del usuario.
 
 # Capitulo 17
+## Utilidades de prueba de red
 
 Este capítulo presenta herramientas utilizadas para diagnosticar y solucionar problemas de red.
 Se explican comandos como ping, traceroute e ipconfig.
