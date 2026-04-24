@@ -11,7 +11,8 @@ De igual forma vemos una parte fundamental de la transmisión de datos ya que pa
 ## Componentes, tipos y conexiones de red
 Se habla del término cliente servidor que hace parte fundamental de una red, ya que el cliente puede ser un equipo que está necesitando un servicio como correo electrónico, acceso a un archivo entre otros, el servidor es quien ofrece este servicio usando software dependiendo de la solicitud, se tiene varias alternativas para estos casos ya que un cliente puede servidor al mismo tiempo, pero se debe analizar cada cas para tener la claridad del uso que se le dará ala red para que el rendimiento del servicio sea el esperado, existen varias formas de interactuar entre cliente y servidor la mas sencilla es llamada entre pares o la mas recomendada un cliente que solicite servicios a varios servidores, para esto es necesario tener claro que la red esta divida en niveles de dispositivos en tres secciones como los son dispositivos finales(computadores, celulares, impresoras), dispositivos intermedios (switch,router, firewall) , medios de red (lan, wan, inalámbrico), el  siguiente paso es saber cómo realizar la conexión a internet de la red que se tenga para estos casos existen diferentes formas de realizarlo, por medio de un ISP quien será nuestro proveedor principal quien ya tiene las interconexiones necesarias entre otro ISP formando una gran red, con esto afinado se pasa a la parte de conexiones que se usaran para los usuarios finales, ya sea usando cable, red inalámbrica, red móvil o red satelital. 
 
-# Capitulo tres
+# Capitulo 3
+
 ## Capa de aplicación
 Es la capa superior (capa 7 del modelo OSI) y permite que las aplicaciones de usuario se comuniquen a través de la red.
 Define:
@@ -90,7 +91,7 @@ o	MUA: cliente
 o	MTA: transporte
 o	MDA: entrega
 
-# Capitulo cuatro
+# Capitulo 4
 
 1. Función de la capa de transporte
 La capa de transporte (capa 4 del modelo OSI) se encarga de la comunicación extremo a extremo entre aplicaciones que se ejecutan en dispositivos de origen y destino.
