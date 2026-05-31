@@ -1,0 +1,45 @@
+Se ejecutan los comandos para crear el archivo de YOLO-CHATBOT  
+Se ejecuta el comando app.py el cual trae carpetas con audio y escritura esto con el fin de hacer preguntas por medio de texto y voz  
+Se crea la imagen del contenedor, las cuales debe llamar las demás carpetas que se implementaran en el transcurso de la ejecución.
+ 
+
+
+implementación de Chatbot con YOLO, se crean las carpetas para que pueda funcionar, esto desde un contenedor de Docker. 
+ 
+
+Se crean las rutas en las mismas carpetas para que pueda ver las fotos y así pueda contestar preguntas acerca de las imágenes que tiene YOLO en el contenedor.
+ 
+
+
+Finalmente, se puede visualizar el Chatbot creado, se tuvo errores pero responde de acuerdo a las imágenes que se incorporaron en YOLO, este Chatbot se abre localmente por el puerto 7860, esta configuración se realizo desde los comando ejecutados, se puede realizar el cambio del puerto si se desea, este puerto debe estar libre, de lo contrario no funcionara.
+ 
+
+YOLO
+Para la creación de la imagen de YOLO como contenedor en Docker hubieron muchos problemas  
+
+
+
+
+Finalmente arranca, pero no se obtiene la imagen para el contenedor, este queda guardado en los archivos de Docker como carpeta, ya que no se pudo implentar como imagen, trae errores en los diferentes scripts que se ejecutaron.
+ 
+Se crean los directorios para YOLO, estos directorios son los que guardan la información de todo lo que se le esta enviando de información “data”
+ 
+
+Se crean archivos de prueba, para revisar como se comporta YOLO  
+Se crea un contenedor de Roboflow, para que automaticamente reconozca las imágenes, esto gracias a un dataset creado en el mismo Roboflow 
+Lo que se realizo en Roboflow fue crear un proyecto, despues de crearlo empezar a subir las imágenes que se requerian, despues de subir las imágenes, debes crear el dataset el cual ve las imágenes y las mueve al mismo tiempo. Esto es lo que debe halar YOLO para que realmente se implemente  
+
+Despues de varios intentos y scripts enviados se logra implementar YOLO sin ninguna novedad, siempre habia un error ya sea por que no reconocia mi usuario creado en Roboflow o por que la APPI no estaba funcionando, también hubo errores donde escribi mal la carpeta del proyecto de Roboflow y tampoco se ejecutaba.
+ 
+ 
+ 
+Creacion de carpeta para que funcionen YOLO de la mano de Roboflow  
+Se envia Script para que Roboflow sea verificado  
+
+
+Se envia Script para un entrenamiento, esto también es para que Roboflow responda a la petición
+ 
+Se ejecutan estos comandos para que corran las carpetas de YOLO, worspace que es la que contiene la información de Roboflow creada con mi usuario, también corre la CPU de Roboflow, y por ultimo crea archivos nuevo en la carpeta de Ultralytics Settings v0.0.6 file
+ 
+
+Por ultimo YOLO ejecuta y trae las imágenes, en el resultado nos muestra margen de errores por cada imagen, el peso y cuanto se demora en subir la información de la misma  
